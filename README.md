@@ -1,0 +1,1 @@
+# Wireframe skin for Stylobate
