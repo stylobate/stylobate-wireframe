@@ -14,12 +14,12 @@ comb.configure(require('./.csscomb.json'));
 
 // test cases
 
-glob.sync("./lib/" + whatToTest + "/tests/*.styl").forEach(function(test){
+glob.sync("./lib/skins/" + whatToTest + "/tests/*.styl").forEach(function(test){
   var name = test.replace(/\.?[\/]/g, ' ').replace(' tests',':').replace('.styl','');
 
   it(name, function(){
     var css = fs.readFileSync(test.replace('.styl', '.css'), 'utf8').replace(/\r/g, '').trim();
-    var style = stylus('@import "lib/standalone.styl"; @import "' + test + '"');
+    var style = stylus('@import "standalone.styl"; @import "' + test + '"');
 
     style.render(function(err, actual){
       if (err) throw err;
