@@ -1,6 +1,6 @@
 {
   "name": "stylobate-wireframe",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "author": "Roman Komarov <kizmarh@ya.ru> (http://kizu.ru/en/)",
   "licence": "MIT",
   "description": "Wireframe skin for stylobate",
@@ -13,13 +13,13 @@
     "url": "git://github.com/stylobate/stylobate-wireframe.git"
   },
   "dependencies": {
-    "stylobate": "0.18.x"
+    "stylobate": "0.20.x"
   },
   "devDependencies": {
-    "autoprefixer": "0.8.x",
+    "autoprefixer": "1.0.x",
     "csso": "1.3.x",
     "csscomb": "2.x.x",
-    "stylus": "0.41.x",
+    "stylus": "0.42.x",
     "glob": "3.2.x",
     "mocha": "*",
     "should": "*"

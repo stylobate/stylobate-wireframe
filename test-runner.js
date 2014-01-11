@@ -26,7 +26,7 @@ glob.sync("./lib/skins/" + whatToTest + "/tests/*.styl").forEach(function(test){
       // Change the order of csso and autoprefixer when
       // we would able to set selector list code style
       actual = csso.justDoIt(actual);
-      actual = autoprefixer.compile(actual);
+      actual = autoprefixer.process(actual).css;
       actual = comb.processString(actual);
 
       // Remove those hardfixes when there would be a way to do this in csscomb
